@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/index.css">
+    <title>login</title>
+</head>
+<body>
+    <header><h1>login</h1></header>
+    <main>
+        <div class="textbox">
+        <form action="php/signup.php" method="get">
+                <div class="label">
+                    <label for="Reg" class="reg">Registration No:</label>
+                    <input type="text" name="RegNo" id="Reg" maxlength="12" pattern="\d{12}" title="Please enter 12 digit number" placeholder="RegNo" autofocus required>
+                </div>
+
+                <div class="label">
+                    <label for="pass" class="password">Password:</label>
+                    <input type="password" name="pass" id="pass" pattern="(?=.*\d)(?=.*[A-Z])(?=.*[a-z]).{8,}" title="Please enter: 1 lowercase, 1 uppercase, 1 digit, and 8 characters minimum" placeholder="Password" required autofocus>
+                </div>
+
+                <input type="submit" value="Submit" class="submit">
+                <input type="reset" value="Reset" class="reset">
+                <p>Are you already Signup? <span><a href="./index.html" target="_blank" style="text-decoration: none;color: blue;"> Login page</a></span></p>
+        </form>
+        </div>
+    </main>
+</body>
+</html>

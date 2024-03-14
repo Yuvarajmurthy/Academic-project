@@ -1,0 +1,325 @@
+/* Default styles */
+
+body {
+    background-image: url("../style/img/e.jpg");
+    margin: 0; /* Reset default margin */
+    padding: 0; /* Reset default padding */
+}
+
+header {
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+img {
+    position: relative;
+    top: -80px;
+    width: 90px; /* Adjust according to your design */
+    max-width: 80px; /* Set a maximum width */
+    height: 90px; /* Maintain aspect ratio */
+    border-radius: 50%;
+    margin-top: 30px;
+}
+
+.textbox {
+    margin: 5% auto; /* Center the textbox horizontally with 5% margin from top and bottom */
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(139, 253, 200);
+    color: black;
+    border-radius: 8px;
+    border: 3px solid white;
+    max-width: 600px; /* Set a maximum width */
+}
+
+.label {
+    padding: 15px;
+    text-align: left; /* Align label text to the left */
+    display: block; /* Display as block */
+    margin-bottom: 10px; /* Adjust the margin to create space between label and input */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: calc(100% - 30px); /* Adjusted width to fit the remaining space */
+    height: 35px;
+    margin-bottom: 10px;
+    font-size: 0.9em; 
+    text-align: center;/* Relative font size */
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    padding: 20px; /* Added padding */
+    box-sizing: border-box; /* Include padding and border in the width */
+    display: block; /* Display as block */
+    font-family: 'Abril Fatface', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Roboto Slab', serif;
+}
+
+.submit,
+.reset {
+    background-color: blue;
+    color: white;
+    margin-top: 15px;
+    text-align: center;
+    width: 130px;
+    height: 40px;
+    border-radius: 30px;
+    border: 2px solid rgb(255, 47, 47);
+    transition: 0.5s;
+    font-size: 1em; /* Relative font size */
+    cursor: pointer;
+}
+
+.submit:hover,
+.reset:hover {
+    color: white;
+    background-color: black;
+}
+
+p {
+    padding-bottom: 15px;
+}
+
+footer {
+    background-color: black;
+    color:white;
+    text-align: center;
+    padding: 20px;
+}
+#cod,#Reg,#student,#pass,#confirmation{
+    margin-top: 8px;
+}
+/* Media Queries for Responsive Design */
+
+@media only screen and (max-width: 600px) {
+    /* Styles for screens up to 600px wide */
+    .textbox {
+        margin: 10% auto; /* Adjust margin for smaller screens */
+    }
+
+    .label,
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        width: 90%; /* Adjusted width for smaller screens */
+        margin: auto; /* Center elements */
+        font-family: 'Abril Fatface', serif;
+        font-family: 'Montserrat', sans-serif;
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Playfair Display', serif;
+        font-family: 'Roboto Mono', monospace;
+        font-family: 'Roboto Slab', serif;
+    }
+}
+
+
+/*body{
+display: grid;
+background-image: url("/style/img/e.jpg");
+background-color: goldenrod;
+flex-wrap: wrap; 
+}
+
+.T-circle{
+    position: absolute;
+    top: 40px;
+    left: 300px;
+    width: 130px;
+    height: 100px;
+    background-color: rgb(255, 0, 0);
+    border: 3px solid white;
+    border-radius: 50%;
+}
+
+.b-circle{
+    position: absolute;
+    top: 40px;
+    right: 310px;
+    width: 130px;
+    height: 100px;
+    background-color: rgb(255, 0, 0);
+    border: 3px solid white;
+    border-radius: 50%;
+    
+}
+
+header{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    left: -10px;
+    position:relative;
+    right: 10px;
+}
+
+img{
+    position:relative;
+    width: 80px;
+    height: 80px;
+    margin-top: 30px;
+    top: -25px;
+    right:5px;
+    border-radius: 50%;
+    padding-top: 15px;
+}
+
+.textbox{
+    display: flexbox;
+    margin: 50px 450px 50px 450px;
+    position: relative;
+    text-align: center;
+    background-color:rgb(139, 253, 200);
+    color: black;
+    border-radius: 8px;
+    border: 3px solid white;
+}
+
+.label{
+    position: relative;
+    padding: 15px;
+}
+
+#student, #Reg, #email, #pass, #confirmation{
+    width: 50%;
+    height: 35px;
+    position: absolute;
+    text-align: center;
+    right: 60px;
+    font-size: 20px;
+    border-radius: 20px;
+    border-style: none;
+    font-family: 'Abril Fatface', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Roboto Slab', serif;
+}
+
+.code{
+    color: red;
+    font-size: large;
+    font-family: 'Abril Fatface', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Roboto Slab', serif;
+     position: absolute;
+     left: 120px;
+}
+
+
+.stud, .reg, .e-mail, .password, .confir{
+    font-size: large;
+    font-family: 'Abril Fatface', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Roboto Slab', serif;
+     position: absolute;
+     left: 110px;
+}
+
+.submit, .reset{
+      background-color:blue;
+      color: white;
+      margin-top:15px;
+      margin-left: 8px;
+      text-align: center;
+      width: 130px;
+      height: 40px;
+      border-radius: 30px;
+      border: 2px solid rgb(255, 47, 47);
+      transition: 0.5s;
+      font-size: large;
+      font-family: 'Abril Fatface', serif;
+        font-family: 'Montserrat', sans-serif;
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Playfair Display', serif;
+        font-family: 'Roboto Mono', monospace;
+        font-family: 'Roboto Slab', serif;
+    }
+
+.submit:hover, .reset:hover{
+    font-size: large;
+    font-family: 'Abril Fatface', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Roboto Slab', serif;
+    transition: 0.5s;
+    color: white;
+    background-color: black;
+}
+
+p{
+    padding-bottom:15px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    top:100px;
+    left: 10px;
+    height: 110px;
+    width: 100%;
+    padding-top: 80px;
+    
+}
+
+
+footer > div{
+    
+}
+
+
+-------------------------------------------@media queries------------------------------------
+---------------------------------------------------------------------------------------------
+
+@media screen and (max-width: 768px) {
+    
+    body{
+        display: grid;
+        
+        background-color: goldenrod;
+        flex-wrap: wrap; 
+        }
+
+    h1 {
+        font-size: 24px;
+    }
+}
+*/
+
+
+/*
+.T-circle {
+    position: absolute;
+    top: 90px;
+    left: 150px;
+    width: 190px;
+    height: 150px;
+    background-color: rgb(255, 0, 0);
+    border: 3px solid white;
+    border-radius: 50%;
+}
+
+.b-circle {
+    position: absolute;
+    bottom: 0px;
+    right: 310px;
+    width: 130px;
+    height: 100px;
+    background-color: rgb(255, 0, 0);
+    border: 3px solid white;
+    border-radius: 50%;
+}
+*/

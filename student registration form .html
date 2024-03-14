@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Student Registration Form</title> 
+  <link rel="stylesheet" href=".\style\student registration form.css"> 
+  </head>
+  
+<body style="BACKGROUND-COLOR:rgb(210, 230, 255)">
+<h3 styLe="font-size:25px" style="PADDING:10PX" align="center"> STUDENT REGISTRATION FORM </h3>
+
+ <form Method="POST" style="font-size:20px">
+<table style= "align:center"; cellpadding = "10">
+ 
+<!----- First Name ---------------------------------------------------------->
+<tr>
+<td><label for="fname">FIRST NAME </td>
+<td><input type="text" name="FIRST_NAME" REQUIRED>
+(max 30 characters a-z and A-Z)
+</td>
+</tr>
+
+
+<!----- Last Name ---------------------------------------------------------->
+<tr>
+<td>LAST NAME</label></b></td>
+<td><input type="text" name="LAST_NAME" REQUIRED>
+(max 30 characters a-z and A-Z)
+</td>
+</tr>
+<!----- registration number ---------------------------------------------------------->
+<tr>
+<td>REGISTRATION NUMBER</b></td>
+<td><input type="INTEGER" name="REGISTRATION_NUMBER" maxlength="30"pattern="[0-9]{12}" REQUIRED>
+(max 12 digits)
+</td>
+</tr>
+<!----- Date Of Birth -------------------------------------------------------->
+<tr>
+<td>DATE OF BIRTH </td>
+ 
+<td>
+<input type="NUMBER" name="DATE_OF_BIRTH" maxlength="8"pattern="([0-9]{2}-[0-9]{2}-[0-9]{4})" REQUIRED>
+(DD/MM/YYYY)
+</td>
+</tr>
+ 
+<!----- Email Id ---------------------------------------------------------->
+<tr>
+<td>EMAIL ID</td>
+<td><input type="email" name="E_MAIL" maxlength="100" REQUIRED></td>
+</tr>
+ 
+<!----- Mobile Number ---------------------------------------------------------->
+<tr>
+<td>MOBILE NUMBER </td>
+<td>
+<input type="number" name="MOBILE_NUMBER" maxlength="10"pattern="[0-9]{10}" REQUIRED>
+(10 digit number)
+</td>
+</tr>
+ 
+<!----- Gender ----------------------------------------------------------->
+<tr>
+<td>GENDER </td>
+<td>
+Male <input type="radio" name="GENDER" value="Male" REQUIRED >
+Female <input type="radio" name="GENDER" value="Female" REQUIRED>
+</td>
+</tr>
+ 
+<!----- Address ---------------------------------------------------------->
+<tr>
+<td>ADDRESS  <br /><br /><br /></td>
+<td><textarea name="ADDRESS" rows="4" cols="30" REQUIRED></textarea></td>
+</tr>
+ 
+<!----- City ---------------------------------------------------------->
+<tr>
+<td>CITY </td>
+<td><input type="text" name="CITY" maxlength="30" REQUIRED>
+(max 30 characters a-z and A-Z)
+</td>
+</tr>
+ 
+<!----- Pin Code ---------------------------------------------------------->
+<tr>
+<td>PIN CODE </td>
+<td><input type="number" name="PINCODE" maxlength="6" REQUIRED>
+(6 digit number)
+</td>
+</tr>
+ 
+<!----- State ---------------------------------------------------------->
+<tr>
+<td>STATE </td>
+<td><input type="text" name="STATE" maxlength="30" REQUIRED>
+(max 30 characters a-z and A-Z)
+</td>
+</tr>
+ 
+<!----- Country ---------------------------------------------------------->
+<tr>
+<td>COUNTRY </td>
+<td><input type="text" name="COUNTRY" value="India" readonly="readonly" REQUIRED></td>
+</tr>
+ 
+<!----- Hobbies ---------------------------------------------------------->
+ <tr>
+<td>SKILLSET </td>
+<td><input type="text" name="SKILLSET" value="" maxlength="30" REQUIRED></td>
+</tr>
+<!----- Qualification---------------------------------------------------------->
+<tr>
+<td>QUALIFICATION <br /><br /><br /><br /><br /><br /><br /></td>
+ 
+<td>
+<table>
+ 
+<tr>
+<td align="center"><b>Sl.No.</b></td>
+<td align="center"><b>Examination</b></td>
+<td align="center"><b>Board</b></td>
+<td align="center"><b>Percentage</b></td>
+<td align="center"><b>Year of Passing</b></td>
+</tr>
+ 
+<tr>
+<td>1</td>
+<td>Class X</td>
+<td><input type="text" name="CLASSX_BOARD" maxlength="30" REQUIRED></td>
+<td><input type="number" name="CLASSX_PERCENTAGE" maxlength="30" REQUIRED></td>
+<td><input type="number" name="CLASSX_YROFPASSING" maxlength="30" REQUIRED></td>
+</tr>
+ 
+<tr>
+<td>2</td>
+<td>Class XII</td>
+<td><input type="text" name="CLASSXII_BOARD" maxlength="30" REQUIRED></td>
+<td><input type="nummber" name="CLASSXII_PERCENTAGE" maxlength="30" REQUIRED></td>
+<td><input type="number" name="CLASSXII_YROFPASSING" maxlength="30" REQUIRED></td>
+</tr>
+ 
+<tr>
+<td>3</td>
+<td>Graduation</td>
+<td><input type="text" name="GRADUATION_BOARD" maxlength="30" REQUIRED></td>
+<td><input type="number" name="GRADUATION_PERCENTAGE" maxlength="30" REQUIRED></td>
+<td><input type="number" name="GRADUATION_YROFPASSING" maxlength="30" REQUIRED></td>
+</tr>
+ 
+<tr>
+<td>4</td>
+<td>Masters</td>
+<td><input type="text" name="MASTERS_BOARD" maxlength="30"></td>
+<td><input type="number" name="MASTERS_PERCENTAGE" maxlength="30"></td>
+<td><input type="number" name="MASTERS_YROFPASSING" maxlength="30"></td>
+</tr>
+ 
+<tr>
+<td></td>
+<td></td>
+<td align="center">(10 char max)</td>
+<td align="center">(upto 2 decimal)</td>
+</tr>
+</table>
+ 
+<!----- Course ---------------------------------------------------------->
+<tr>
+<td> COURSES COMPLETED</td>
+<td>B.E<input type="Radio" name="COURSE" value="B.E"></td>
+<td>BCA<input type="Radio" name="COURSE" value="BCA"></td>
+<td>B.Com<input type="Radio" name="COURSE" value="B.Com"></td>
+<td>B.Sc<input type="Radio" name="COURSE" value="B.Sc"></td>
+<td>B.A<input type="Radio" name="COURSE" value="B.A"></td>
+</tr>
+<!----- department ---------------------------------------------------------->
+ <tr>
+<td>DEPARTMENT </td>
+<td><input type="text" name="DEPARTMENT" maxlength="30" REQUIRED>
+</td>
+</tr>
+<!----- jobrole ---------------------------------------------------------->
+ <tr>
+<td>JOBROLE </td>
+<td><input type="text" name="JOBROLE" maxlength="30" REQUIRED>
+</td>
+</tr>
+<!----- upload resume ---------------------------------------------------------->
+ <tr>
+<td>UPLOAD RESUME </td>
+<td><input type="file" name="UPLOAD_RESUME" REQUIRED>
+</td>
+</tr>
+<!----- Submit and Reset ------------------------------------------------->
+<tr>
+<td align="right" >
+<input type="submit" name="submit" id="log" value="SUBMIT">
+</td>
+</tr>
+</table> 
+</form>
+</body>
+</html>
